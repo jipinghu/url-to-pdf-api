@@ -14,6 +14,7 @@
     "no-use-before-define": ["error", { "functions": false }],
     "no-underscore-dangle": "off",
     "no-console": "off",
+    "linebreak-style": ["error", "windows"],
     "comma-dangle": ["error", {
         "arrays": "always-multiline",
         "objects": "always-multiline",
