@@ -1,19 +1,18 @@
 module.exports = {
-  apps : [{
+  // http://pm2.keymetrics.io/docs/usage/application-declaration/
+  apps: [{
     name: 'Url to PDF Service',
     script: 'src/index.js',
-
-    // Options reference: https://pm2.io/doc/en/runtime/reference/ecosystem-file/
     args: '',
     instances: 2,
     autorestart: true,
-    watch: true,
-    max_memory_restart: '2G',
+    watch: false,
+    max_memory_restart: '4G',
     env: {
-      NODE_ENV: 'development'
+      NODE_ENV: 'development',
     },
     env_production: {
-      NODE_ENV: 'production'
-    }
-  }]
+      NODE_ENV: 'production',
+    },
+  }],
 };

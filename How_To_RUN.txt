@@ -1,0 +1,12 @@
+>> How to run in production?
+    source .env.production
+    pm2 start ecosystem.config.js --env production
+
+>> How to Delete pm2 process?
+    pm2 delete ecosystem.config.js 
+
+>> How to check pm2 status?
+    pm2 list
+
+>> How to check one process status?
+    pm2 show 0 or 1
