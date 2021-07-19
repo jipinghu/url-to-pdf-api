@@ -4,7 +4,7 @@ module.exports = {
     name: 'Url to PDF Service',
     script: 'src/index.js',
     args: '',
-    instances: 2,
+    instances: 8,
     autorestart: true,
     watch: false,
     max_memory_restart: '4G',
